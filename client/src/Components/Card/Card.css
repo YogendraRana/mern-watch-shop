@@ -1,0 +1,181 @@
+
+/**********************Main Style*********************/
+.card-container{
+	height: 50rem;
+	width: 100%;
+	padding: 0.5rem;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);
+}
+
+.card-container.slide-1{min-width: 100%;}
+.card-container.slide-2{min-width: 50%;}
+.card-container.slide-3{min-width: 33.33%;}
+.card-container.slide-4{min-width: 25%;}
+
+.card-container .card-wrapper{
+	height: 100%;
+	width: 100%;
+	padding: 0.25rem;
+	background-color: var(--dark-light);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/**********************Card Image*********************/
+
+.card-container .card-wrapper .image{
+	height: 55%;
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+}
+
+.card-container .card-wrapper .image img{
+	height: 100%;
+}
+
+/**********************Card Content*********************/
+.card-container .card-wrapper .card-content{
+	min-height: 30%;
+	width: 100%;
+	padding: 1rem;
+	background: #f6fbfb;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-container .card-wrapper .card-content .card-rating{
+	width: 100%;
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-container .card-wrapper .card-content .card-rating div p{
+	margin-bottom: 0.5rem;
+	font-size: var(--font-medium);
+}
+
+.card-container .card-wrapper .card-content .card-rating div .stars{
+	display: flex;
+}
+
+.card-container .card-wrapper .card-content .card-rating div .stars i{
+	font-size:var(--font-small);
+	margin-right: 0.5rem;
+	color: #f9ca1c;
+}
+
+.card-container .card-wrapper .card-content .card-rating span{
+	font-size: var(--font-medium-small);
+	margin-left: auto;
+	padding: 1rem 2rem;
+	background: #ededed;
+	border-radius: 50px;
+}
+
+.card-container .card-wrapper .card-content .card-detail{
+	width: 100%;
+	margin-bottom: 1rem;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card-container .card-wrapper .card-content .card-detail h4{
+	font-size: var(--font-medium);
+}
+
+.card-container .card-wrapper .card-content .card-detail p{
+	color: #999999;
+	font-size: var(--font-small);
+}
+
+.card-container .card-wrapper .card-content .btn-box{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-container .card-wrapper .card-content .btn-box div{
+	background: var(--dark-light);
+	height: 3.5rem;
+	width: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card-wrapper .card-content .btn-box div i{
+	font-size: var(--font-medium-small);
+}
+
+.card-container .card-wrapper .card-content .btn-box a.buy-btn{
+	padding: 1.1rem 2.5rem;
+	font-size: var(--font-small);
+	border-radius: 50px;
+	color: var(--primary-color);
+	background: #24252a;
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.card-container .card-wrapper .card-content .btn-box a:hover{
+	background-color: #000000;
+	transition: 0.2s ease-in-out;
+}
+
+/************************CLicked***************************/
+.card-container .card-wrapper .card-content .btn-box .cart.clicked{
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+/***********************************************************************************************************/
+/****************************************************Responsive Code****************************************/
+/***********************************************************************************************************/
+
+/************************Large Tablet Screen************************/
+@media (max-width: 1024px){
+	/***No css***/
+}
+
+/************************Medium Tablet Screen************************/
+@media (max-width: 992px){
+  /***No css***/
+}
+
+/************************Small Tablet Screen************************/
+@media (max-width: 768px){
+   .card-container{
+		height: 65rem;
+	}
+
+	.card-container .card-wrapper .card-content {
+    	min-height: 35%;
+	}
+}
+
+@media (max-width: 600px){
+   /***No css***/
+}
+
+/************************Mobile Screen************************/
+@media (max-width: 480px){
+	.card-container .card-wrapper .card-content .btn-box a{
+		display: none;
+	}
+}
+
+

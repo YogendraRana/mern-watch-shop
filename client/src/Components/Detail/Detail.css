@@ -1,0 +1,381 @@
+.product-detail{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/***************************Detail Col 1**************************/
+.detail-col-1{
+	height: calc(100vh - var(--nav-height) - var(--site-padding));
+	width: 49%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/***************************Detail Col 1 - Row 1**************************/
+.detail-col-1 .row-1{
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.detail-col-1 .row-1 .product-brand p{
+	font-size: var(--font-small);
+}
+
+.detail-col-1 .row-1 .product-name p{
+	font-size: var(--font-extra-large);
+	font-weight: bolder;
+}
+
+.detail-col-1 .row-1 .product-status{
+	display: flex;
+}
+
+.detail-col-1 .row-1 .product-status p{
+	font-size: var(--font-small);
+	margin-right: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+.detail-col-1 .row-1 .product-status p:not(:last-child){
+	border-right: 1px solid #d5d5d5;
+}
+
+.detail-col-1 .row-1 .product-price{
+	display: flex;
+}
+
+.detail-col-1 .row-1 .product-price p{
+	font-size: var(--font-medium);
+	margin-right: 0.5rem;
+	height: 3rem;
+	line-height: 3rem;
+	background-color: var(--dark-light);
+	padding: 0 1rem 0 1rem;
+}
+
+.detail-col-1 .row-1 .product-price p:last-child{
+	padding: 0 4rem 0 1rem;
+	position: relative;
+}
+
+.detail-col-1 .row-1 .product-price p:last-child:after{
+	content: '';
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	top: 0;
+	right: -2rem;
+	background: var(--primary-color);
+	transform: rotate(45deg);
+}
+
+.detail-col-1 .row-1 .product-description p{
+	font-size: var(--font-medium);
+}
+
+.detail-col-1 .row-1 .product-buttons{
+	display: flex;
+}
+
+.detail-col-1 .row-1 .product-buttons div{
+	height: 3.5rem;
+	width: 3.5rem;
+	line-height: 3.5rem;
+	text-align: center;
+	margin-right: 1.5rem;
+	background-color: var(--dark-light);
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.2s ease-in;
+}
+
+.detail-col-1 .row-1 .product-buttons div i{
+	font-size: var(--font-small);
+}
+
+.detail-col-1 .row-1 .product-buttons .cart-clicked{
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.detail-col-1 .row-1 .product-buttons a button{
+	height: 3.5rem;
+	padding: 0 2rem;
+	font-size: var(--font-small);
+	border: none;
+	outline: none;
+	border-radius: 50px;
+	color: var(--primary-color);
+	background: var(--secondary-color);
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/***************************Detail Col 1 - Row 2**************************/
+
+.detail-col-1 .row-2{
+	height: 45%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.detail-col-1 .row-2 ul{
+	height: 2.75rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.detail-col-1 .row-2 ul li{
+	height: 100%;
+	line-height: 2.75rem;
+	padding: 0 1rem;
+	font-size:var(--font-small);
+	cursor: pointer;
+	background-color: var(--dark-light);
+	border: 1px solid var(--dark-medium);
+}
+
+.detail-col-1 .row-2 ul li.more-detail-active{
+	background-color: var(--dark-medium);
+}
+
+.detail-col-1 .row-2 .more-detail{
+	height: 88%;
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid var(--dark-medium);
+}
+
+/***************************Specs***************************/
+.detail-col-1 .row-2 .more-detail .more-detail-1{
+	height: 100%;	
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-1 .specs-1,
+.detail-col-1 .row-2 .more-detail .more-detail-1 .specs-2{	
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.detail-col-1 .row-2 .more-detail .more-detail-1 .specs-1 p,
+.detail-col-1 .row-2 .more-detail .more-detail-1 .specs-2 p{
+	font-size: var(--font-small);
+}
+
+/**************Delivery, Return & Warrenty**************/
+.detail-col-1 .row-2 .more-detail .more-detail-2{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-2 .delivery-info,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .cash-info,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .return-info,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .warrenty-info{
+	display: flex;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-2 .delivery-info i,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .cash-info i,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .return-info i,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .warrenty-info i{
+	margin-right: 2rem;
+	padding-top: 0.2rem;
+	font-size: var(--font-medium);
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-2 .delivery-info div p,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .cash-info div p,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .return-info div p,
+.detail-col-1 .row-2 .more-detail .more-detail-2 .warrenty-info div p{
+	margin-bottom: 0.5rem;
+	font-size: var(--font-medium-small);
+}
+
+/**********************Reviews**********************/
+.detail-col-1 .row-2 .more-detail .more-detail-3{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/************************About Brand*******************/
+.detail-col-1 .row-2 .more-detail .more-detail-4{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 p{
+	font-size: var(--font-small);
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials{
+	display: flex;
+	margin-top: 1rem;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a{
+	height: 3.5rem;
+	width: 3.5rem;
+	margin-right: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a i{
+	font-size: var(--font-medium-small);
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a:nth-child(1){
+	background-color: #3b5999;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a:nth-child(2){
+	background-color: #e1306c;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a:nth-child(3){
+	background-color: #46c1f6;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a:nth-child(4){
+	background-color: #006aff;
+}
+
+.detail-col-1 .row-2 .more-detail .more-detail-4 .brand-socials a:nth-child(5){
+	background-color: #171515;	
+}
+
+
+/***************************Detail Col 2**************************/
+.detail-col-2{
+	height: calc(100vh - var(--nav-height) - var(--site-padding));
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;	
+}
+
+.detail-col-2 .row-1{
+	height: 75%;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}
+
+.detail-col-2 .row-1 img{
+	max-width: 100%;
+	height: 100%;
+}
+
+.detail-col-2 .row-2{
+	height: 25%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.detail-col-2 .row-2 img{
+	height: 100%;
+	padding: 0.5rem;
+	width: calc(25% - 1rem);
+	cursor: pointer;
+	border: 1px solid var(--dark-medium);
+}
+
+.detail-col-2 .row-2 .detail-image.active{
+	border: 1px solid black;
+}
+
+/***********************************************************************************************************/
+/****************************************************Responsive Code****************************************/
+/***********************************************************************************************************/
+
+/************************Tablet Screen************************/
+@media (max-width: 1024px){
+	/***No Css***/
+}
+
+
+@media (max-width: 922px){
+  .detail-col-2 .row-2 {
+    	height: 75%;
+	}
+
+	.detail-col-2 .row-2 {
+    	height: 20%;
+	}
+}
+
+
+@media (max-width: 768px){
+    .product-detail{
+		flex-direction: column-reverse;
+	}
+
+	.detail-col-1,.detail-col-2{
+		width: 100%;
+	}
+
+	.detail-col-2{
+		margin-bottom: 3rem;
+	}
+
+	.detail-col-2 .row-2 {
+    	height: 70%;
+	}
+
+	.detail-col-2 .row-2 {
+    	height: 30%;
+	}
+}
+
+
+@media (max-width: 600px){
+    /***No Css***/
+}
+
+/************************Mobile Screen************************/
+@media (max-width: 480px){
+	.detail-col-2 .row-2{
+		height: 20%;
+	}
+}
+
+@media (max-width: 375px){
+	.detail-col-2 .row-2 {
+	    height: 17%;
+	}
+
+	.detail-col-1 .row-2 ul li {
+    	padding: 0 0.25rem;
+    }
+}

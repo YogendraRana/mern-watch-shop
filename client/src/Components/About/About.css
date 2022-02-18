@@ -1,0 +1,94 @@
+.about-section{
+	width: 100%;
+	display: flex;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+.about-section .left-column{
+	height: calc(100vh - var(--nav-height) - var(--site-padding));
+	width: 50%;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.about-paragraph h3{
+	font-size: var(--font-large);
+	margin-bottom: 0.5rem;
+}
+
+.about-paragraph p{
+	margin: 0 0 2.5rem 0;
+	font-size: var(--font-medium-small);
+}
+
+.about-section .left-column a .contact-link{
+	font-size: var(--font-medium-small);
+	padding: 0.75rem 1.25rem;
+	margin-top: 1rem;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.about-section .left-column .contact-link:hover{
+	background: var(--primary-color);
+	color: var(--secondary-color);
+	transition: all 0.2s ease-in-out;
+}
+
+.about-section .right-column{
+	height: calc(100vh - var(--nav-height) - var(--site-padding));
+	width: 50%;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-section .right-column img{
+	height: 100%;
+}
+
+/***********************************************************************************************************/
+/****************************************************Responsive Code****************************************/
+/***********************************************************************************************************/
+
+/************************Tablet Screen************************/
+@media (max-width: 1024px){
+	.about-section .left-column{
+		width: 60%;
+	}
+
+	.about-section .right-column{
+		width: 40%;
+	}
+}
+
+
+@media (max-width: 992px){
+	/***No Css***/
+}
+
+
+@media (max-width: 768px){
+  	.about-section .left-column{
+		width: 100%;
+	}
+
+	.about-section .right-column{
+		display: none;
+	}
+}
+
+
+@media (max-width: 600px){
+  	/***No Css***/
+}
+
+/************************Mobile Screen************************/
+@media (max-width: 480px){
+	/***No Css***/
+}

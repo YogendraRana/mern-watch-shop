@@ -1,0 +1,62 @@
+/********************Category Head********************/
+.category-wrapper{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.category-wrapper .head{
+	width: 100%;
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.category-wrapper .head .category-title h3{
+	padding-left: 1rem;
+	font-size: var(--font-extra-large);
+  	display: block;
+    font-weight: bolder;
+}
+
+.category-wrapper .head .arrows{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.category-wrapper .head .arrows .arrow-left,
+.category-wrapper .head .arrows .arrow-right{
+	height: 3.5rem;
+	width: 3.5rem;
+	background-color: var(--dark-light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.category-wrapper .head .arrows .arrow-left i,
+.category-wrapper .head .arrows .arrow-right i{
+	font-size: 1.3rem;
+}
+
+.category-wrapper .head .arrows .arrow-left.not-active,
+.category-wrapper .head .arrows .arrow-right.not-active{
+	background-color: white;
+	border: 1px solid var(--dark-light);
+}
+
+.category-wrapper .head .arrows .arrow-left{
+	margin-right: 1rem;
+}
+
+/********************Category - slider********************/
+.category-wrapper .category-slider{
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
